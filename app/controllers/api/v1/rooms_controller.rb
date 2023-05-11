@@ -37,6 +37,6 @@ class Api::V1::RoomsController < ApplicationController
         end
     
         def room_params
-                params.fetch(:room, {})
+            params.require(:room).permit(:photo, :hotel_id)
         end
 end
