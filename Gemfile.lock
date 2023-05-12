@@ -176,7 +176,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   debug
-  devise
+  devise (~> 4.9)
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors
