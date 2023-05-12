@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reservation_date: 2023-05-11
+  amount: 1
+  number_of_persons: 1
+  departure_date: 2023-05-11
+  user: one
+
+two:
+  reservation_date: 2023-05-11
+  amount: 1
+  number_of_persons: 1
+  departure_date: 2023-05-11
+  user: two
