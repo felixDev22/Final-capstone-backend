@@ -2,7 +2,7 @@ class Api::V1::RoomsController < ApplicationController
   before_action :set_room, only: %i[show update destroy]
 
   def index
-    @rooms = Room.all
+    @rooms = Room.where(hotel_id: params[:hotel_id])
     render json: @rooms
   end
 
@@ -11,9 +11,9 @@ class Api::V1::RoomsController < ApplicationController
   end
 
   def create
-    @room = Room.new(room_params)
+    @room = Hotel.rooms.new(room_params)
     if @room.save
-      render json: @room, status: :created, location: api_v1_room_url(@room)
+      render json: @room, status: :created
     else
       render json: @room.errors, status: :unprocessable_entity
     end

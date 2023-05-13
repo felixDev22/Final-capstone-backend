@@ -12,9 +12,10 @@ class Api::V1::HotelsController < ApplicationController
   def create
     @hotel = Hotel.new(hotel_params)
     if @hotel.save
-      render json: @hotel
+      render json: @hotel, status: :created
     else
-      render error: { error: 'Unable to create Hotel.' }, status: 400
+      puts @hotel.errors.full_messages
+      render error: { errors: @hotel.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
@@ -24,7 +25,7 @@ class Api::V1::HotelsController < ApplicationController
       @hotel.update(hotel_params)
       render json: { message: 'Hotel successfully updated.' }, status: 200
     else
-      render json: { error: 'Unable to update Hotel.' }, status: 400
+      render json: { error: 'Unable to update Hotel.' }, status: :unprocessable_entity
     end
   end
 
@@ -41,6 +42,6 @@ class Api::V1::HotelsController < ApplicationController
   private
 
   def hotel_params
-    params.require(:hotel).permit(:photo, :name, :desc)
+    params.require(:hotel).permit(:user_id, :photo, :name, :desc)
   end
 end
