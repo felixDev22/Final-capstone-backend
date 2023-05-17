@@ -12,8 +12,9 @@ class Api::V1::SessionsController < ApplicationController
       }
     else
       render json: {
+        logged_in: false,
         status: 401,
-        errors: ['no such user, please try again']
+        errors: ['email or password is incorrect, please try again']
       }
     end
   end
