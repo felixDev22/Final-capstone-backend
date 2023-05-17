@@ -5,7 +5,9 @@ Rails.application.routes.draw do
       resources :registrations
         resources :reservations 
         resources :hotels do
+          resources :room_types do
          resources :rooms
+          end
        end
     end
 end
