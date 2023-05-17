@@ -15,8 +15,14 @@ hotel2 = Hotel.create(name: "Chan", photo: "https://images.pexels.com/photos/145
 hotel3 = Hotel.create(name: "Pixabay", photo: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", price: 350, location: "Guinea", rating: 7.5, user_id: 3)
 
 
-room_type1 = Room.create(name: "single")
-room_type2 = Room.create(name: "double")
-room_type3 = Room.create(name: "suite")
-room_type4 = Room.create(name: "king")
-room_type5 = Room.create(name: "queen")
+room_type1 = RoomType.create(name: "single")
+room_type2 = RoomType.create(name: "double")
+room_type3 = RoomType.create(name: "suite")
+room_type4 = RoomType.create(name: "king")
+room_type5 = RoomType.create(name: "queen")
+
+room1 = Room.create(room_type_id: 1, hotel_id: 1, price: 100, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+room2 = Room.create(room_type_id: 2, hotel_id: 1, price: 200, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+room3 = Room.create(room_type_id: 3, hotel_id: 1, price: 300, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+room4 = Room.create(room_type_id: 4, hotel_id: 1, price: 400, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+room5 = Room.create(room_type_id: 5, hotel_id: 1, price: 500, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
