@@ -38,6 +38,7 @@ class Api::V1::RegistrationsController < ApplicationController
       session[:user_id] = user.id
       render json: {
         status: :created,
+        iscreated: true,
         user:
       }
     else
