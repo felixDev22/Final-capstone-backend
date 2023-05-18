@@ -29,6 +29,7 @@ class Api::V1::RegistrationsController < ApplicationController
 
   def create
     user = User.create!(
+      name: params['user']['name'],
       email: params['user']['email'],
       password: params['user']['password'],
       password_confirmation: params['user']['password_confirmation']
@@ -50,6 +51,6 @@ class Api::V1::RegistrationsController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 end
