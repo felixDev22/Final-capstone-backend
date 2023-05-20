@@ -19,6 +19,12 @@ class Api::V1::SessionsController < ApplicationController
     end
   end
 
+  def show
+    render json: set_user, status: :ok
+    rescue ActiveRecord::RecordNotFound
+     render json: { error: 'User not found' }, status: :not_found
+  end
+
   def logged_in?
     if logged_in? && current_user
       render json: {
