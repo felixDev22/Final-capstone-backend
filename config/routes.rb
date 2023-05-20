@@ -15,5 +15,6 @@ end
   post '/login',    to: 'api/v1/sessions#create'
   post '/logout',   to: 'api/v1/sessions#destroy'
   get '/logged_in', to: 'api/v1/sessions#is_logged_in?'
-  post '/signup',    to: 'api/v1/registrations#create'
+  post '/signup',   to: 'api/v1/registrations#create'
+  get '/user',      to: 'api/v1/sessions#show'
 end
