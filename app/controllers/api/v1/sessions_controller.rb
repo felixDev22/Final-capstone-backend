@@ -1,8 +1,6 @@
 class Api::V1::SessionsController < ApplicationController
   def create
     @user = User.find_by(email: session_params[:email])
-    # user = User.find_by(email: params["user"][:email])
-    # .try(:authenticate, params["user"][:email] )
 
     if @user&.authenticate(session_params[:password])
       login!
@@ -12,17 +10,10 @@ class Api::V1::SessionsController < ApplicationController
       }
     else
       render json: {
-        logged_in: false,
         status: 401,
-        errors: ['email or password is incorrect, please try again']
+        errors: ['Invalid email or password']
       }
     end
-  end
-
-  def show
-    render json: set_user, status: :ok
-  rescue ActiveRecord::RecordNotFound
-    render json: { error: 'User not found' }, status: :not_found
   end
 
   def logged_in?
@@ -34,7 +25,7 @@ class Api::V1::SessionsController < ApplicationController
     else
       render json: {
         logged_in: false,
-        message: 'no such user'
+        message: 'User not logged in'
       }
     end
   end
