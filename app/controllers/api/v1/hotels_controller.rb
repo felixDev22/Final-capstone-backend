@@ -29,16 +29,16 @@ class Api::V1::HotelsController < ApplicationController
     end
   end
 
-def destroy
-  @hotel = Hotel.find(params[:id])
-  if @hotel
-    Room.where(hotel_id: @hotel.id).delete_all  # Delete associated rooms
-    @hotel.destroy
-    render json: { message: 'Hotel successfully deleted.' }, status: 200
-  else
-    render json: { error: 'Unable to delete Hotel.' }, status: 400
+  def destroy
+    @hotel = Hotel.find(params[:id])
+    if @hotel
+      Room.where(hotel_id: @hotel.id).delete_all # Delete associated rooms
+      @hotel.destroy
+      render json: { message: 'Hotel successfully deleted.' }, status: 200
+    else
+      render json: { error: 'Unable to delete Hotel.' }, status: 400
+    end
   end
-end
 
 
   private
