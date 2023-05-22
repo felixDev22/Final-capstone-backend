@@ -11,9 +11,8 @@ class Reservation < ApplicationRecord
   def departure_date_after_reservation_date
     return if departure_date.blank? || reservation_date.blank?
 
-    if departure_date < reservation_date
-      errors.add(:departure_date, "must be after the reservation date")
-    end
-  end
+    return unless departure_date < reservation_date
 
+    errors.add(:departure_date, 'must be after the reservation date')
+  end
 end
