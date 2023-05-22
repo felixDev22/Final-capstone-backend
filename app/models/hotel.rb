@@ -1,5 +1,5 @@
 class Hotel < ApplicationRecord
-  belongs_to :user 
+  belongs_to :user
   has_many :reservations, dependent: :destroy
   has_many :rooms, dependent: :destroy
   validates :user_id, presence: true
