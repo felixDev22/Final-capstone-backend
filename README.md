@@ -89,6 +89,16 @@ ruby on rails
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
+
+<!-- UML -->
+## ⚙️ UML
+
+![UML](./db/UML.png)
+
+
+## API Documentation 
+- [API Documentation](https://documenter.getpostman.com/view/23623281/2s93m4XiCJ)
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
