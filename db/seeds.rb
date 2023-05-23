@@ -22,7 +22,7 @@ room_type3 = RoomType.create(name: "Master-suite")
 room_type4 = RoomType.create(name: "king")
 room_type5 = RoomType.create(name: "queen")
 
-room1 = Room.create(room_type_id: 1, hotel_id: 1, price: 100, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+room1 = Room.create(hotel_id: last.id, price: 100, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
 room2 = Room.create(room_type_id: 2, hotel_id: 1, price: 200, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
 room3 = Room.create(room_type_id: 3, hotel_id: 2, price: 300, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
 room4 = Room.create(room_type_id: 4, hotel_id: 2, price: 400, photo: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
