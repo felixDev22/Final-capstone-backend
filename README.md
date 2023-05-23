@@ -99,6 +99,12 @@ ruby on rails
 - [Twitter](https://twitter.com/kingibro345)
 - [LinkedIn](https://www.linkedin.com/in/elixDev22/)
 
+👤 **KENNEDY OWUSU**
+
+- [GitHub](https://github.com/kennedyowusu)
+- [Twitter](https://twitter.com/_iamkobby)
+- [LinkedIn](www.linkedin.com/in/kennedy-owusu)
+
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- FUTURE FEATURES -->
