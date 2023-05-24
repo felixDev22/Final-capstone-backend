@@ -4,4 +4,4 @@
 require_relative "config/application"
 
 Rails.application.load_tasks
-rake assets:precompile (RAILS_ENV=production bundle exec rake assets:precompile
+rake assets:precompile RAILS_ENV=production
