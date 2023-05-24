@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
 user1 = User.create(name: "Ali", email: "ali@gmail.com", password: "123456", password_confirmation: "123456")
 user2 = User.create(name: "ibrahim", email: "ibrahim@gmail.com", password: "123456", password_confirmation: "123456")
 user3 = User.create(name: "Kennedy", email: "kennedy@gmail.com", password: "123456", password_confirmation: "123456")
@@ -64,7 +65,6 @@ hotel5 = Hotel.create(name: "Shika Mo", photo: "https://img.freepik.com/free-pho
 9 km from the Jumba la Mtwana", price: 550, location: "Mumbai", rating: 5.0, user_id: 4)
 
 
-
 room1 = Room.create(hotel_id: 1, photo: "https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg?w=1380&t=st=1684938072~exp=1684938672~hmac=fd74be411dce17b87e1b98f67c2d4c82ee7ae87c5f03c85e963ae586f984ae64")
 room2 = Room.create(hotel_id: 2, photo: "https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-bedroom-int_1203-2346.jpg?w=1380&t=st=1684938478~exp=1684939078~hmac=bec953fd8587978dcfe19b8b4b08f83406a6baeae6ef9a996786436d97e30aae")
 room3 = Room.create(hotel_id: 3, photo: "https://img.freepik.com/free-photo/3d-rendering-modern-luxury-bedroom-suite-bathroom_105762-1936.jpg?w=900&t=st=1684938822~exp=1684939422~hmac=5bd36f48945ef22ef7f3d289f5afbd90956aa87782d2d0704fd91b93589c9cd8")
@@ -79,3 +79,11 @@ room9 = Room.create(hotel_id: 9, photo: "https://img.freepik.com/free-photo/3d-r
 room10 = Room.create(hotel_id: 10, photo: "https://img.freepik.com/free-photo/interior-modern-comfortable-hotel-room_1232-1822.jpg?w=1380&t=st=1684938973~exp=1684939573~hmac=f31362b70aa92f6bd061ef638e6d2fe38b40bca86a16122b2a5716a3f03e293e")
 room11 = Room.create(hotel_id: 11, photo: "https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?w=1380&t=st=1684939168~exp=1684939768~hmac=8473dfab1336b6ccc0b8eaa253f5711f16222c0c9bda193d363d3a54e3c9c118")
 room12 = Room.create(hotel_id: 12, photo: "https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?w=1380&t=st=1684939318~exp=1684939918~hmac=7e30638a968f1f4b1c298fa3c658fc03714cbf8cb6da0d6b2f8b7e6db90a3f62")
+
+
+room_type1 = RoomType.create(name: "Single")
+room_type2 = RoomType.create(name: "Double")
+room_type3 = RoomType.create(name: "Master-suite")
+room_type4 = RoomType.create(name: "king")
+room_type5 = RoomType.create(name: "queen")
+

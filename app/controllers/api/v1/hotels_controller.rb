@@ -32,6 +32,7 @@ class Api::V1::HotelsController < ApplicationController
   def destroy
     @hotel = Hotel.find(params[:id])
     if @hotel
+      Room.where(hotel_id: @hotel.id).delete_all # Delete associated rooms
       @hotel.destroy
       render json: { message: 'Hotel successfully deleted.' }, status: 200
     else
