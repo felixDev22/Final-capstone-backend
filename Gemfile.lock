@@ -180,11 +180,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-<<<<<<< HEAD
-   ruby 3.2.2p53
-=======
    ruby 3.1.3p185
->>>>>>> 6f84bf393991dfedb37b3487f2accdb1b5cd677a
 
 BUNDLED WITH
    2.4.9
