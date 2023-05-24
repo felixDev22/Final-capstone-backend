@@ -248,6 +248,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 7.0.4, >= 7.0.4.3)
   rails-controller-testing
+  rake (~> 13.0)
   rspec-rails
   selenium-webdriver
   shoulda-matchers (~> 5.0)
