@@ -1,6 +1,18 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  namespace 'api' do
+    namespace 'v1' do
+      resources :sessions
+      resources :registrations
+        resources :reservations 
+        resources :hotels do
+              resources :rooms
+          end
+    end
+end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  post '/login',    to: 'api/v1/sessions#create'
+  post '/logout',   to: 'api/v1/sessions#destroy'
+  get '/logged_in', to: 'api/v1/sessions#is_logged_in?'
+  post '/signup',   to: 'api/v1/registrations#create'
+  get '/user',      to: 'api/v1/sessions#show'
 end
