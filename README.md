@@ -51,6 +51,14 @@ ruby on rails
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
+### Live Server <a name="live-server"><a>
+
+[KEFI HOTEL BOOKING APP](https://kefi-hotel-booking.netlify.app/)
+
+### Demo USer
+  - email : ali@gmail.com
+  - password : 123456
+
 <!-- Key Features -->
 
 ## Key Features <a name="key-features"></a>
