@@ -4,6 +4,10 @@
 require_relative "config/application"
 
 Rails.application.load_tasks
-task :precompile_assets do
-  sh 'rake assets:precompile RAILS_ENV=production'
+task 'assets:precompile' do
+  puts 'Skipping assets:precompile'
+end
+
+task 'assets:clean' do
+  puts 'Skipping assets:clean'
 end
