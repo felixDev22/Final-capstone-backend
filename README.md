@@ -83,7 +83,7 @@ ruby on rails
 ### Run
 
 - Change/include `host, username, password` according to your database server.
-- Run `rails db:create` and `rails db:migrate`
+- Run `rails db:create` and `rails db:migrate` and `rails db:seed`
 - Run `rails s` to start the server.
 - In your browser, go to `http://localhost:3000`.
 
