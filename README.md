@@ -51,6 +51,14 @@ ruby on rails
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
+### Live Server <a name="live-server"><a>
+
+[KEFI HOTEL BOOKING APP](https://kefi-hotel-booking.netlify.app/)
+
+### Demo USer
+  - email : ali@gmail.com
+  - password : 123456
+
 <!-- Key Features -->
 
 ## Key Features <a name="key-features"></a>
@@ -89,14 +97,14 @@ ruby on rails
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
-
 <!-- UML -->
+
 ## ⚙️ UML
 
 ![UML](./db/UML.png)
 
+## API Documentation
 
-## API Documentation 
 - [API Documentation](https://documenter.getpostman.com/view/23623281/2s93m4XiCJ)
 
 <!-- AUTHORS -->
@@ -134,6 +142,19 @@ ruby on rails
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Better user interface**
+
+<!-- NUMBER OF TEAM -->
+
+## Number of Team <a name="number-of-team"></a>
+
+**There are four collaborators in this team**
+
+- [IBRAHIM](https://github.com/dmambo)
+- [MAALOUM](https://github.com/maaloum)
+- [FELIX](https://github.com/felixDev22)
+- [KENNEDY](https://github.com/kennedyowusu)
+
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- CONTRIBUTING -->
 
